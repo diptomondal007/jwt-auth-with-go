@@ -1,6 +1,6 @@
 package auth
 
-import "jwtauth/auth/models"
+import "jwtauthwithgo/auth/models"
 
 type Repository interface {
 	Login(username string) (*models.User, error)

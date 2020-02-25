@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"jwtauth/api"
-	"jwtauth/auth"
-	"jwtauth/repository/psql"
-	"jwtauth/routers"
+	"jwtauthwithgo/api"
+	"jwtauthwithgo/auth"
+	"jwtauthwithgo/repository/psql"
+	"jwtauthwithgo/routers"
 	"log"
 	"net/http"
 	"os"

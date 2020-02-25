@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/go-chi/chi"
-	"jwtauth/handlers"
+	"jwtauthwithgo/handlers"
 	"net/http"
 )
 

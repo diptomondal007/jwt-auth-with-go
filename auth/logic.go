@@ -1,7 +1,7 @@
 package auth
 
 import (
-	"jwtauth/auth/models"
+	"jwtauthwithgo/auth/models"
 	"time"
 )
 

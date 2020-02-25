@@ -1,6 +1,6 @@
 package auth
 
-import "jwtauth/auth/models"
+import "jwtauthwithgo/auth/models"
 
 type Serializer interface {
 	Encode(user *models.User) ([]byte, error)

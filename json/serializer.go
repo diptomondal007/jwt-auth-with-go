@@ -3,7 +3,7 @@ package json
 import (
 	"encoding/json"
 	errs "github.com/pkg/errors"
-	"jwtauth/auth/models"
+	"jwtauthwithgo/auth/models"
 )
 
 type User struct{}

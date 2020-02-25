@@ -3,7 +3,7 @@ package routers
 import (
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
-	"jwtauth/api"
+	"jwtauthwithgo/api"
 )
 
 func InitRoutes(handler api.AuthHandler) *chi.Mux{
