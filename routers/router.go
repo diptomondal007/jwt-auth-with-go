@@ -14,5 +14,6 @@ func InitRoutes(handler api.AuthHandler) *chi.Mux{
 
 	r.Post("/register",handler.RegisterPost)
 	r.Post("/login",handler.LoginPost)
+	r = SetHelloRoutes(r)
 	return r
 }
