@@ -1,4 +1,4 @@
-module jwtauth
+module jwt-auth-with-go
 
 go 1.13
 
