@@ -1,12 +1,12 @@
 package api
 
 import (
+	js "encoding/json"
 	"github.com/dgrijalva/jwt-go"
 	"golang.org/x/crypto/bcrypt"
 	"io/ioutil"
 	"jwtauth/auth"
 	"jwtauth/json"
-	js "encoding/json"
 	"log"
 	"net/http"
 	"time"

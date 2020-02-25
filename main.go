@@ -5,14 +5,12 @@ import (
 	"jwtauth/api"
 	"jwtauth/auth"
 	"jwtauth/repository/psql"
+	"jwtauth/routers"
 	"log"
 	"net/http"
 	"os"
 	"os/signal"
 	"syscall"
-
-	"github.com/go-chi/chi"
-	"github.com/go-chi/chi/middleware"
 )
 
 const (
@@ -27,13 +25,7 @@ func main() {
 	repo := chooseDb("postgres")
 	service := auth.NewAuthService(repo)
 	handler := api.NewHandler(service)
-	r := chi.NewRouter()
-	r.Use(middleware.RequestID)
-	r.Use(middleware.Logger)
-	r.Use(middleware.Recoverer)
-
-	r.Post("/register",handler.RegisterPost)
-	r.Post("/login",handler.LoginPost)
+	r := routers.InitRoutes(handler)
 	errs := make(chan error, 2)
 
 	go func() {
