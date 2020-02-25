@@ -5,7 +5,7 @@ import (
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 	"golang.org/x/crypto/bcrypt"
 	"jwtauthwithgo/auth"
-	" jwtauthwithgo/auth/models"
+	"jwtauthwithgo/auth/models"
 	"log"
 )
 
